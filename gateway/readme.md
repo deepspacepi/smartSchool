@@ -2,3 +2,6 @@
 
 * https://www.waveshare.com/sx1302-868m-lorawan-gateway-b.htm?srsltid=AfmBOorKM2vcUppeAnWef2ca1UD0ZmKNLw7ZOC77XzxBjGE0Ix2vsILD
 * https://www.waveshare.com/wiki/SX1302_LoRaWAN_Gateway_HAT
+
+Στην συνέχεια παρουσιάζουμε τις βασικές ρυθμίσεις που απαιτήθηκαν για την εγκατάσταση του LoRa module στο Raspberry Pi4 ώστε να λειτουργεί ως LoRaWAN Gateway, καθώς και την σύνδεση του με το The Things Network.
+
