@@ -73,3 +73,49 @@ cd ~/Documents/sx1302_hal/packet_forwarder/
 
 Αν θέλουμε να ενεργοποιήσουμε το packet forwarder ως service Raspberry Pi, έτσι ώστε να εκτελείται κάθε φορά που αυτό ξεκινάει, μπορούμε να το κάνουμε με την παρακάτω διαδικασία.
 
+Αρχικά δημιουργούμε ένα νέο αρχείο με το όνομα που επιθυμούμε χρησιμοποιώντας τον κειμενογράφο nano σε γραμμή εντολών.
+
+```
+sudo nano /etc/systemd/system/lorawan.service
+```
+
+Στην συνέχεια προσθέτουμε τις επόμενες εντολές, οι οποίες εκκινούν το packet forwarder 15 δευτερόλεπτα αφού ανοίξει το Raspberry Pi. Επιπλέον, ορίζεται ότι η υπηρεσία θα επανεκκινεί κάθε φορά που χρειάζεται.
+
+
+```
+[Unit]
+Description=LoRaWAN Packet Forwarder
+After=network-online.target
+Wants=network-online.target
+
+
+[Service]
+Type=simple
+User=pi
+ExecStartPre=/bin/sleep 15
+ExecStart=/home/pi/Documents/sx1302_hal/packet_forwarder/lora_pkt_fwd -c test_conf.json
+WorkingDirectory=/home/pi/Documents/sx1302_hal/packet_forwarder/
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Για την εκκίνηση της υπηρεσίας χωρίς να χρειαστεί επανεκκίνηση του Raspberry Pi, θα πρέπει να εκτελέσουμε τις παρακάτω εντολές
+
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable lorawan.service
+sudo systemctl start lorawan.service
+```
+
+Για να ελέγξουμε την κατάσταση της υπηρεσίας μπορούμε να εκτελέσουμε τις παρακάτω εντολές.
+
+
+```
+sudo systemctl status lorawan.service
+```
+
+
