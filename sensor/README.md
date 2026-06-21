@@ -12,11 +12,11 @@
 
 Η συνδεσμολογία που απαιτείται για τον αισθητήρα φαίνεται στην επόμενη εικόνα.
 
-<img width="527" height="534" alt="smartSchoolSensor" src="https://github.com/user-attachments/assets/7afaa22a-1443-4c2f-9a11-4f7631c84bd4" />
+<img align="center" width="527" height="534" alt="smartSchoolSensor" src="https://github.com/user-attachments/assets/7afaa22a-1443-4c2f-9a11-4f7631c84bd4" />
 
 Για την σύνδεση του αισθητήρα με το TTN απαιτείται πρώτα η δημιουργία μίας εφαρμογής (Application). Η δημιουργία της είναι απλή και θα πρέπει μόνο να συμπληρώσουμε Application ID Application name όπως φαίνεται στην επόμενη εικόνα.
 
-<img width="1920" height="1080" alt="TTN-Application" src="https://github.com/user-attachments/assets/1bac2aa5-251f-4e59-9221-081d465b6623" />
+<img align="center" width="1920" height="1080" alt="TTN-Application" src="https://github.com/user-attachments/assets/1bac2aa5-251f-4e59-9221-081d465b6623" />
 
 Στην συνέχεια θα πρέπει να δημιουργήσουμε μέσα στο Application όλες τις τερματικές συσκευές που θέλουμε να συνδέσουμε για την αποστολή δεδομένων. Στην επόμενη εικόνα φαίνονται οι βασικές ρυθμίσεις που επιλέχθηκαν για τον αισθητήρα μας καθώς και οι πληροφορίες που δημιουργήθηκαν για την σύνδεση του με το TTN.
 
@@ -26,7 +26,7 @@
 
 Να σημειώσουμε ότι όλες αυτές τις πληροφορίες θα πρέπει να τις συμληρώσουμε και στο αρχείο config.h. Για ευνόητους λόγους ασφαλείας, στα παραδείγματα μας δεν έχουμε πραγματικές τιμές.
 
-<img width="1920" height="1540" alt="Sensor-01" src="https://github.com/user-attachments/assets/098de717-fea8-4d1d-aa0b-fdc88f9cbfe3" />
+<img align="center" width="1920" height="1540" alt="Sensor-01" src="https://github.com/user-attachments/assets/098de717-fea8-4d1d-aa0b-fdc88f9cbfe3" />
 
 Αφού δημιουργήσουμε την τερματική συσκευή στο TTN, θα πρέπει να ανεβάσουμε τον κώδικα με την χρήση του Arduino IDE. Εφόσον η συσκευή μας συνδεθεί στο TTN μπορούμε να δούμε σε πραγματικό χρόνο τις τιμές που λαμβάνονται όπως φαίνεται στην επόμενη εικόνα.
 
