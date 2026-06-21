@@ -11,3 +11,6 @@
 * Διάφορα Αναλώσιμα
 
 Η συνδεσμολογία που απαιτείται για τον αισθητήρα φαίνεται στην επόμενη εικόνα.
+
+<img width="527" height="534" alt="smartSchoolSensor" src="https://github.com/user-attachments/assets/7afaa22a-1443-4c2f-9a11-4f7631c84bd4" />
+
