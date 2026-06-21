@@ -12,7 +12,9 @@
 
 Η συνδεσμολογία που απαιτείται για τον αισθητήρα φαίνεται στην επόμενη εικόνα.
 
+<p align="center">
 <img align="center" width="527" height="534" alt="smartSchoolSensor" src="https://github.com/user-attachments/assets/7afaa22a-1443-4c2f-9a11-4f7631c84bd4" />
+</p>
 
 Για την σύνδεση του αισθητήρα με το TTN απαιτείται πρώτα η δημιουργία μίας εφαρμογής (Application). Η δημιουργία της είναι απλή και θα πρέπει μόνο να συμπληρώσουμε Application ID Application name όπως φαίνεται στην επόμενη εικόνα.
 
